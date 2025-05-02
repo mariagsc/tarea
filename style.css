@@ -93,7 +93,7 @@ footer{
     
 #banner{
     height: 180vh;
-    width: 200vh;
+    width: 100%;
     background-position: left top;
    background-color:rgba(17, 27, 69, 0.263);
     background-image: url(../tarea/IMG/baner\ 6.jpg);
@@ -228,6 +228,140 @@ footer{
       width: 100%;
       max-height: 250px;
     }
-  
-    
-  
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: center; 
+      }
+      .boton-reserva {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #342878;
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+      .boton-reserva {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #372987;
+        color: rgb(92, 13, 13);
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .formulario form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      
+      input, button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+      }
+      button {
+        background-color: #342878;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      
+      button:hover {
+        background-color: #271c5c;
+      }
+      @media (max-width: 768px) {
+
+        /* Ajusta el header para apilar elementos en columna */
+        header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      
+        /* Menú de navegación vertical */
+        .navbar ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+      
+        /* Las tarjetas de reviews se apilan verticalmente */
+        .servicios {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        /* Cada review ocupa casi todo el ancho */
+        .reviews {
+          width: 90%;
+          margin-bottom: 20px;
+        }
+      
+        /* Ajusta el banner para ocupar todo el ancho y menor alto en móvil */
+        #banner {
+          height: 200px;
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+        }
+      
+        /* Logo más pequeño en dispositivos pequeños */
+        .logo img {
+          width: 150px;
+          height: auto;
+        }
+      
+        /* Botón de reserva centrado y más fácil de presionar */
+        .mi-boton {
+          margin-top: 15px;
+          padding: 10px 20px;
+          background-color: #342878;
+          color: white;
+          border: none;
+          border-radius: 20px;
+          font-weight: bold;
+        }
+      
+        /* Estructura de contacto (footer) en una sola columna */
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr;
+          text-align: center;
+          gap: 10px;
+        }
+      
+        /* Formularios adaptados a dispositivos móviles */
+        .formulario form {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin-top: 20px;
+          width: 90%;
+          margin: 0 auto;
+        }
+      
+        /* Campos de formulario cómodos para interactuar */
+        input,
+        button {
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+        }
+      
+        /* Botón de formulario con efecto hover */
+        button {
+          background-color: #342878;
+          color: white;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+      
+        button:hover {
+          background-color: #271c5c;
+        }
+      }
